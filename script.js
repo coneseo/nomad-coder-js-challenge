@@ -1,7 +1,7 @@
 const title = document.querySelector('#title');
 
-function resizeMessage(){
-  console.log("resizing message!");
+function resizeMessage(event){
+  console.log(event);
 }
 
 window.addEventListener("resize", resizeMessage)
