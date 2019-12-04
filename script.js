@@ -22,6 +22,33 @@ console.log(array[2].key);
 
 function sayHello(name, age){
   console.log("hello ",name," you have ",age)
+  return `Hello ${name} you are ${age} old`;
 }
 
-sayHello("coneseo", 29);
+const greetNicolas = sayHello("coneseo", 29);
+
+console.log(greetNicolas);
+
+const calculator = {
+  plus : function(a,b ){
+    return a+b;
+  },
+  minus : function(a,b){
+    return a-b;
+  },
+  multiple : function(a,b){
+    return a * b;
+  },
+  power : function(a,b){
+    return a**b;
+  },
+  divide : function(a,b){
+    return a/b;
+  }
+}
+
+const plus = calculator.plus(1,2);
+console.log(plus);
+
+console.log(calculator.power(2,5));
+
