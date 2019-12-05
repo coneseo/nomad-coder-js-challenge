@@ -34,3 +34,14 @@ title.addEventListener("mouseover", superEventHandler.mouseOnTop);
 title.addEventListener("mouseleave", superEventHandler.mouseLeave);
 window.addEventListener("resize", superEventHandler.resize);
 window.addEventListener("contextmenu", superEventHandler.rightClick);
+
+//wifi 상태를 감지하는 eventlistenr
+function handleOffline(){
+  console.log("bye bye");
+}
+
+function handleOnline(){
+  console.log("hello");
+}
+window.addEventListener("offline", handleOffline);
+window.addEventListener("online", handleOnline);
