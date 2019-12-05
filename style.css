@@ -2,6 +2,14 @@ body{
   background-color : peru;
 }
 
+
+.work {
+  cursor: pointer;
+}
+.title{
+  color : pink;
+  transition: 0.5s ease-in-out 
+}
 h1{
   color : white;
 }
