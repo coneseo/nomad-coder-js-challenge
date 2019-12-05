@@ -8,7 +8,7 @@ body{
 }
 .title{
   color : pink;
-  transition: 0.5s ease-in-out 
+  transition: color 0.5s ease-in-out 
 }
 h1{
   color : white;
