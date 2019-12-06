@@ -15,4 +15,20 @@ function changeColor(){
 window.addEventListener("click", changeColor);
 
 
+const body = document.querySelector("body");
+function changeColor() {
+  const width = window.innerWidth;
+  console.log(width);
+  if (width > 1000) {
+    body.style.backgroundColor = "#EEBC0F";
+  } else if (width <= 1000 && width > 500) {
+    body.style.backgroundColor = "#914EAC";
+  } else{
+    body.style.backgroundColor = "#2E8CD4";
+  }
+}
+
+window.addEventListener("resize", changeColor);
+
+
 
