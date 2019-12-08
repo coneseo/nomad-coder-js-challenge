@@ -45,6 +45,17 @@ function getTime(){
 
   clock.innerHTML = `${days < 10 ? `0${days}` : days}d ${hours < 10 ? `0${hours}`:hours}h 
   ${minutes < 10 ? `0${minutes}`:minutes}m ${seconds < 10 ? `0${seconds}` : seconds}s`;
+//니콜라스 챌린지 정답(NINE_HOURS_MILLISECONDS 로 세계 어디서든 가능하도록)
+  // const NINE_HOURS_MILLISECONDS = 32400000;
+  // const xmasDay = new Date("2019-12-24:00:00:00+0900");
+  // const now = new Date();
+  // const difference = new Date(xmasDay - now - NINE_HOURS_MILLISECONDS);
+  // const days = difference.getDate();
+  // const minutes = difference.getMinutes();
+  // const hours = difference.getHours();
+  // const seconds = difference.getSeconds();
+
+
 }
 
 function init(){
