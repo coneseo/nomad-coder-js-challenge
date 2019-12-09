@@ -37,6 +37,14 @@ function handleSubmit(event){
 
 function loadToDos(){
     const toDos = localStorage.getItem(TODOS_LS);
+    if(toDos !== null){
+        console.log(toDos);
+        const parsedToDos = JSON.parse(toDos);
+        console.log(parsedToDos);
+        parsedToDos.forEach(function(todo){
+            paintValue(todo.text);
+        })
+    }
 }
 function init(){
     loadToDos();
