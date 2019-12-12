@@ -3,8 +3,9 @@ toDoInput = todoform.querySelector("input");
 const todoList = document.querySelector(".js-toDoList");
 
 const TODOS_LS = "toDos";
+const DEL_LS = "dels";
 let toDos = [];
-
+let dels = [];
 
 
 function delToDo(event){
